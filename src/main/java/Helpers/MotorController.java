@@ -1,13 +1,11 @@
 
 
 
-package src.main.java.Helpers;
-
-import PWMDevice;
 
 
+import se.hirt.pi.adafruit.pwm.PWMDevice;
 
-public class MotorController {
+public class MotorController extends PWMDevice {
 	
 	public void Test(){
 		

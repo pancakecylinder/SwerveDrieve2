@@ -11,6 +11,11 @@ apply plugin: 'java-library'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
+    
+    flatDir {
+        dirs 'libs'
+    }
+    
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
@@ -21,7 +26,9 @@ repositories {
 }
 
 dependencies {
-     implementation files('src.main.java.Helpers')
+    
+    implementation name: 'pwm'
+
 
     
     // This dependency is exported to consumers, that is to say found on their compile classpath.
